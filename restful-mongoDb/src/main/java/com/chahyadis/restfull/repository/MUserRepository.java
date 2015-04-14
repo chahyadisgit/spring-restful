@@ -21,4 +21,6 @@ public interface MUserRepository extends MongoRepository<MUser, String> {
 	List<MUser> findByUsernameLike(@Param("username") String username);
 
 	List<MUser> findByFirstNameLike(@Param("firstName") String firstName);
+	
+	Long deleteByUsername(@Param("username") String username);
 }
