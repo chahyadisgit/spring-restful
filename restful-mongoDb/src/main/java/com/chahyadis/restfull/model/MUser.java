@@ -35,7 +35,7 @@ public class MUser {
 
 	@Field("LAST_NAME")
 	private String lastName;
-	@DBRef
+	@DBRef(lazy=false)
 	private List<MAddress> address;
 
 	/**
